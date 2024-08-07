@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    width: 100%;
+    
+    
+}
+/*    navbar  */
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+
+    flex-wrap: wrap;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 99999;
+}
+nav .logo h1{
+    padding-left: 3vh;
+    font-size: 202% !important;
+}
+nav ul{
+    display: flex;
+    gap: 2vw;
+    margin-top: 2vh;
+    margin-right: 3vh;
+}
+nav ul li{
+    margin: -2vh;
+    margin-right: 2vh;
+    border-radius: 12px;
+    padding: 1.5vh 5vh;
+    transition: 0.5s;
+    filter: drop-shadow(3px 2px 8px aqua);
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+nav .toggle{
+    color:white;
+    font-size: 30px;
+    position: absolute;
+    right: 5vw;
+    display: none;
+}
+nav ul i{
+    font-size: 15px;
+    padding-right: 15px;
+}
+#page1 .btns .btns1 i{
+    font-size: 15px;
+    padding-right: 15px;
+    color: white;
+
+}
+.container1.blur{
+    filter: blur(5px);
+}
+#last-btn{
+    position: absolute;
+    top: 90%;
+    right: 2%;
+    background-color: white;
+    color: rgb(8, 7, 7);
+    border: 1px solid white;
+}
+@media(max-width:1079px){
+    nav{
+        font-size: 12px;
+    }
+}
+@media(max-width:936px){
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        right: -200px;
+        top: 8vh;
+        background-color: black;
+        text-align: center;
+        padding: 2vh;
+        z-index: 999;
+        transition: 2.1s;
+        border-left: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    nav ul li{
+        margin: -1vh 7vh;
+        border-radius: 12px;
+        padding: 5px 15px;
+        padding-bottom: 10px;
+        border-radius: 0%;
+
+             
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    nav ul.upwards{
+        right: -3vh;
+    }
+    nav .toggle{
+        display: block;
+    }
+
+}
+
+
+
+
+.container1{
+    width: 100%;
+    background-color: black;
+    transition: 1.2s;
+}
+.container-section{
+    padding: 2vh 5vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    
+}
+
+/* for content in page  */
+#page1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgb(30, 30, 30),black);
+}
+.sub-section{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#text{
+    font-size: 13px;
+    padding-left:10%;
+    padding-right: 10%;
+}
+.socialic{
+    margin-top: 30px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 80px;
+    
+}
+.container-section .socialic a{
+    font-size: 25px;
+}
+.btns{
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.btns .btns1{
+    font-size: 14px;   
+    width: 40%;
+    transition: 0.7s;
+}
+.btns .btns1:hover{
+    background-color: transparent;
+    
+}
+.btns .btns1 a{
+    text-decoration: none;
+    color: white;
+}
+.img-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+#img2{
+    width: 40%;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transition: 1.6s;
+}
+#img1{
+    top: 40%;
+    width: 50%;
+    position: absolute;
+    left: 20%;
+    transition: 1.6s;
+    filter: drop-shadow(5px 5px 35px silver);
+}
+#img1.hv{
+    left:13%;
+
+}
+#img2.hv{
+    top:17% ;
+    left:25%;
+}
+#dailogue-box{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    left: 60%;
+    top: 3%;
+    transition: 1.5s;
+    opacity: 0;
+
+}
+#dailogue-box.db{
+    left: 52%;
+    top: 25%;
+    opacity: 1;
+}
+#img3{
+    width: 25%;
+    position: absolute;
+    top: -27%;
+    left: 0;
+    
+}
+#welcome-message{
+    position: absolute;
+    top: 16%;
+    left: 5%;
+    color: black;    
+    font-size: 10px;
+    color: rgb(255, 170, 0);
+    letter-spacing: 2px;
+}
+#welcome-message2{
+    position: absolute;
+    top: 26%;
+    left: 5%;
+    color: black;    
+    font-size: 10px;
+}
+
+
+
+
+@media(max-width:752px){
+    .socialic a{
+        font-size: 19px;
+    }
+    
+    #text{
+        font-size: 10px;
+        padding-left:10%;
+        padding-right: 10%;
+    }
+    #page1{
+        flex-direction: column;
+    }
+    #img2{
+        width: 100px;
+    }
+    .sub-section{
+        margin: 0px;
+        margin-top: 10px;
+        width: 100%;
+        height: 100vh;
+    }
+    .sub-section2{
+        display: none;
+    }
+    
+        
+    }
+   
+
+#page2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+#page2 h1{
+    text-align: center;
+    padding: 5vh 0;
+    border-bottom: 2px solid rgb(250, 249, 249);
+}
+.image2{
+    
+    width:40%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.image2 img{
+    height: 25vh;
+    width: auto;
+}
+.containerpg2{
+    margin-bottom: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1.5s;
+}
+.details{
+    width: 40%;
+   
+    text-align: center;
+    padding: 3vh 0;
+    display: none;
+    transition: 1.5s;
+}
+.details.dl{
+    display: block;
+    transition: 1.5s;
+}
+
+
+/* page 3*/
+#page3{
+    width: 100%;
+    min-height: 100vh;
+}
+#page3 h1{
+    margin-top: 5vh;
+    color: white;
+    text-align: center;
+}
+#page3 .cont-img{
+      margin: 3vh;
+      width: 200px;
+      position:relative;
+      overflow: hidden;
+      border: 2px solid white;
+}
+#page3 .cont-img img{
+    padding: 8vh;
+    
+}
+#page3 .coursename{
+    background-color: rgba(227, 207, 207,0.23);
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    transform: translate(-50%,-200%);
+    transition: 1.2s;
+    
+}
+#page3 .coursename.move{
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+
+}
+#page3 .coursename h1{
+    padding: 2vh 50vh;
+    height: 15vh;
+    color: white;
+    font-size: 1.3em;
+}
+#page3 .cont-img.blur img{
+    filter: blur(5px);
+}
+.container-page3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*  form  */
+#page4 h3{
+padding-top: 6%;
+text-align: center;
+}
+.container-cont{
+display: flex;
+justify-content: space-between;
+}
+
+#page4 form{
+    padding: 2vh;
+    margin-top: 5%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(239, 169, 122);
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 1s;
+}
+#page4 .map{
+padding: 2vh;
+margin-top: 5%;
+width: 40%;
+overflow: hidden;
+border-radius: 5px;
+}
+#page4 .map iframe{
+    border-radius: 5px;
+width: 100%;
+}
+#page4 form:hover{
+    box-shadow: inset 1px 1px 10px black,
+                10px 12px 10px white;  
+    animation:scale2 0.3s 1;
+   
+}
+@keyframes scale2{
+    0%{
+        zoom: 100%;
+    }
+    100%{
+        zoom: 200%;
+    }
+}
+#page4 form .firstrow{
+    display: flex;
+    justify-content: space-between;
+}
+#page4 input,#page4 textarea{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+#page4 form .firstrow input{
+    width: 98%;
+    margin-right: 2px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+} 
+#page4 form button{
+    margin-top: 5px;
+    width: 40%;
+    border-radius: 0;
+    align-self: center;
+}
+@media(max-width:992px){
+#page4 .container-cont .form , #page4 .container-cont .map{
+    width: 90%;
+}
+#page4 .container-cont{
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+
+
+
