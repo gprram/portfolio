@@ -83,7 +83,7 @@ nav ul i{
     nav ul{
         flex-direction: column;
         position: absolute;
-        right: -200px;
+        right: -350px;
         top: 8vh;
         background-color: black;
         text-align: center;
